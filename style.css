@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: ;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section{
+    display: flex;
+}
+
+section div{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.splitted{
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-mode{
+}
+
+.btn-split{
+    background-color: #ffbaba;
+    
+}
+
+.btn-join{
+    background-color: #aaffaa;
+}
+
+.btn-action{
+    border: 2px solid yellow;
+}
+
+.btn-action:hover{
+    cursor: pointer;
+    background: transparent url('/images/stars.gif') contain no-repeat;
+}
+
+button{
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 5px 15px;
+    border-radius: 22px;
+}
+
