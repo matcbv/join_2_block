@@ -7,11 +7,12 @@
 body{
     width: 100vw;
     max-width: 100vw;
-    height: 100vh;
-    background-color: #ebe3ff;
+    min-height: 100vh;
+    background-color: #ced7ff;
 }
 
 main{
+    margin: 80px 0;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -35,25 +36,63 @@ h1{
     font-family: monospace;
     -webkit-text-stroke: 2px black;
     color: white;
+    width: 320px;
 }
+
+.r-span{
+    display: inline-block;
+    animation: to-right 0.3s ease-in-out 0s 1 normal forwards;
+    width: 105px;
+}
+
+.l-span{
+    display: inline-block;
+    animation: to-left 0.3s ease-in-out 0s 1 normal forwards;
+    width: 132px;
+}
+
+/* @keyframes to-right {
+    from{
+        margin-left: -50px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+} */
+
+
 
 label{
     font-size: 1.2rem;
     font-family: monospace;
+    font-weight: bold;
 }
 
 textarea{
     border-radius: 10px;
     border: 2px solid black;
     margin: 5px 0 20px 0;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: monospace;
 }
 
 .splitted{
-    min-width: 350px;
+    min-width: 500px;
     min-height: 350px;
     border: 2px solid black;
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.splitted div{
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: monospace;
 }
 
 .btn-split{
@@ -80,6 +119,8 @@ textarea{
 .btn-action{
     border: 2px solid yellow;
     background-color: #ffffd9;
+    min-width: 140px;
+    max-width: 280px;
 }
 
 .btn-action:hover{
@@ -98,4 +139,11 @@ button{
 
 button:hover{
     cursor: pointer;
+}
+
+.row{
+    width: 3px;
+    height: 100%;
+    background-color: black;
+    align-self: center;
 }
